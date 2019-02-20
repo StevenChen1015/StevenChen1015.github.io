@@ -7909,13 +7909,15 @@ h1, h2, h3, h4, h5,
   margin-bottom: 6em; }
   .blog-entry .img {
     display: block;
-    height: 400px;
+    height: 150px;
+    width: 400px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     border-radius: 3px; }
     .blog-entry .img.img-2 {
-      height: 330px; }
+      width: 200px;
+      height: 200px; }
   .blog-entry .text {
     position: relative;
     z-index: 0; }
