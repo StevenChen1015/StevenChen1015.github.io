@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Steven Chen - Portfolio</title>
+    <title>Schedule for CSR</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
-
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/ionicons.min.css">
-
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+   	var password = "951015"; // because ANYONE CAN SEE THIS IN VIEW SOURCE!
+
+	// Repeatedly prompt for user password until success:
+	(function promptPass() {
+
+	  var psw = prompt("Enter your Password");
+
+	  while (psw !== password) {
+	    alert("Incorrect Password");
+	    return promptPass();
+	  }
+
+	}());
+    </script>
   </head>
   <body>
-
 	<div id="colorlib-page">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 		<aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
@@ -36,54 +42,23 @@
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li class="colorlib-active"><a href="projects.html">Projects</a></li>
+					<li><a href="projects.html">Projects</a></li>
 					<li><a href="experience.html">Experience</a></li>
 					<li><a href="education.html">Education</a></li>
 					<li><a href="contact.html">Contact</a></li>
-					<li><a href="schedule.html">Schedule</a></li>
+					<li class="colorlib-active"><a href="schedule.html">Schedule</a></li>
 				</ul>
 			</nav>
 		</aside> <!-- END COLORLIB-ASIDE -->
-		<div id="colorlib-main">
-			<section class="ftco-section-2">
-				<div class="project">
-					<h1 class="my-5 py-4 px-5">Projects</h1>
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<div class="projects-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/gradius_photo.png);">
-								<div class="overlay"></div>
-								<div class="text text-center">
-									<h3>Java - Gradius game</h3>
-									<span><input class="project-button" type="button" onclick="location.href='https://github.com/StevenChen1015/Gradius'" value="Code Here">
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="projects-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/hangman_photo.png);">
-								<div class="overlay"></div>
-								<div class="text text-center">
-									<h3>JavaScript - HangMan</h3>
-									<span><input class="project-button" type="button" onclick="location.href='https://github.com/StevenChen1015/Hangman'" value="Code Here">
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div href="#" class="projects-entry img d-flex justify-content-center align-items-center" style="background-color:lightgrey; background-size: contain; background-image: url(images/ttt_photo.png);">
-								<div class="overlay"></div>
-								<div class="text text-center">
-									<h3>Java - TicTacToe</h3>
-									<span><input class="project-button" type="button" onclick="location.href='https://github.com/StevenChen1015/TicTacToe'" value="Code Here"></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-    <footer style="position:fixed; bottom:0; width:80%;">
-    	<p class="mt-4 text-center" style="font-size:10px;">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Site template from <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-
-    </footer>
-		</div><!-- END COLORLIB-MAIN -->
+		<div id="colorlib-main" style="height: 100%;">
+			<section class="ftco-section contact-section">
+	      <div class="container">
+	      	<h1>CSR Schedule</h1>
+		</div>
+<footer style="position:fixed; bottom:0; width:80%;">
+    <p class="ml-4 text-center" style="font-size:10px;">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Site template from <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+</footer>
+    	</div><!-- END COLORLIB-MAIN -->
 	</div><!-- END COLORLIB-PAGE -->
 
   <!-- loader -->
@@ -104,13 +79,6 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
-<!--   <script>
-  	$('.overlay').click(function(){
-  		alert($(this).parent().className);
-
-  	});
-
-  </script>
- -->    
+    
   </body>
 </html>
