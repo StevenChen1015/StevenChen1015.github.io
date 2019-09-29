@@ -4,13 +4,13 @@
     <title>Steven Chen - Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
+
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
 
-    
+
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
@@ -55,6 +55,7 @@
 								<div class="text text-center">
 									<h3>Java - Gradius game</h3>
 									<span><input class="project-button" type="button" onclick="location.href='https://github.com/StevenChen1015/Gradius'" value="Code Here">
+                    <span><input class="project-button preview-button" id="Gradius-button" type="button" value="Preview">
 								</div>
 							</div>
 						</div>
@@ -64,6 +65,7 @@
 								<div class="text text-center">
 									<h3>JavaScript - HangMan</h3>
 									<span><input class="project-button" type="button" onclick="location.href='https://github.com/StevenChen1015/Hangman'" value="Code Here">
+                    <span><input class="project-button preview-button" id="HangMan-button" type="button" value="Preview">
 								</div>
 							</div>
 						</div>
@@ -73,6 +75,7 @@
 								<div class="text text-center">
 									<h3>Java - TicTacToe</h3>
 									<span><input class="project-button" type="button" onclick="location.href='https://github.com/StevenChen1015/TicTacToe'" value="Code Here"></span>
+                  <span><input class="project-button preview-button" id="TicTacToe-button" type="button" value="Preview">
 								</div>
 							</div>
 						</div>
@@ -85,6 +88,28 @@
     </footer>
 		</div><!-- END COLORLIB-MAIN -->
 	</div><!-- END COLORLIB-PAGE -->
+
+<!-- Modal for video previewing-->
+<div id="previewModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>This is a preview of the object.</p>
+      </div>
+      <video id="preview" style="max-width:600px;" src="" autoplay muted controls>
+
+      </video>
+    </div>
+  </div>
+</div>
+
+
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
@@ -104,13 +129,27 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
-<!--   <script>
-  	$('.overlay').click(function(){
-  		alert($(this).parent().className);
-
+  <script>
+    $('.preview-button').click(function () {
+      $('#previewModal').modal('show');
+    })
+    $('#Gradius-button').click(function(){
+      $('.modal-title').text("Gradius Game Preview");
+      $('#preview').attr('src', 'videos/GradiusPreview.mp4');
+    });
+  	$('#HangMan-button').click(function(){
+      $('.modal-title').text("HangMan Game Preview");
+      $('#preview').attr('src', 'videos/HangManPreview.mp4');
   	});
+    $('#TicTacToe-button').click(function(){
+      $('.modal-title').text("TicTacToe Game Preview");
+      $('#preview').attr('src', 'videos/TicTacToePreview.mp4');
+    });
+
+
+
 
   </script>
- -->    
+
   </body>
 </html>
