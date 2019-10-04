@@ -3,7 +3,7 @@ var fps = 0;
 var score = 0;
 var gameStopped = false;
 // var gameStarted = false;
-var MAX_LENGTH = 15;
+var MAX_LENGTH = 5;
 var SNAKE_X = 64;
 var SNAKE_Y = 64;
 
