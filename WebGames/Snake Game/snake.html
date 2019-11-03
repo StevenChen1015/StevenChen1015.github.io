@@ -1,38 +1,53 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Snake Game</title>
-	<link rel="stylesheet" type="text/css" href="snake.css">
-	<script type="text/javascript" src="snake.js"></script>
-</head>
-<body>
-<div class="grid-container">
-    <div class="item1"><h1>Snake Game</h1></div>
-  	<div class="item2">	
-	  	<div>
-			<p>Instruction: 
-			<ul>
-				<li>Click start button to start the game.</li>
-				<li>Use the arrow keys or buttons to control the Snake.</li>
-				<li>Collect more dots to gain more points.</li>
-			</ul>
-			</p>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Snake Game</title>
+		<link rel="stylesheet" type="text/css" href="snake.css">
+		<script type="text/javascript" src="snake.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+		  <h1>Snake Game</h1>
 		</div>
-	</div>  
-  <div class="item3"><h2>Score: <span id="score">0</span></h2></div>
-  <div class="item4">
-  	<button id="start">Start Game</button> 
-  	<button value="restart">Restart Game</button>
-  </div>
-</div>
-<canvas id="canvas" width="800" height="400"> </canvas>
-<br>
-<div class="btn-group" style="width:80%">
-	<button style="width:20%" value="UP">UP</button>
-	<button style="width:20%" value="DOWN">DOWN</button>
-	<button style="width:20%" value="LEFT">LEFT</button>
-	<button style="width:20%" value="RIGHT">RIGHT</button>
-</div>
 
-</body>
+		<div class="main">
+			<h2>Instruction</h2>
+			<div class="row">
+				<div class="col-9" id="instruction">
+					<ul>
+						<li>Click start button to start game.</li>
+						<li>Controls: arrow keys or swipe.</li>
+						<li>Collect more dots to gain more points.</li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<p>Score: <span id="score">0</span></p>
+				</div>
+			</div>
+
+			<div id="main">
+				<ul>
+					<h1>Snake Game</h1>
+					<li><button class="button play" id="start">Start Game</button></li>
+					<div id="lostgame">
+						<h3>YOU LOST!</h3>
+						<h4 id="lost_score"></h4>
+						<button value="restart" id="restart">Restart Game</button>
+					</div>
+				</ul>
+			</div>
+		<canvas id="canvas">
+		<p>You're browser does not support the required functionality to play this game.</p>
+		</canvas>
+
+
+
+		</div>
+
+		<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright w3schools.com</div>
+
+	</body>
 </html>
