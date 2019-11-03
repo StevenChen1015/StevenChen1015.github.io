@@ -43,7 +43,7 @@ document.getElementById('start').addEventListener('click', function (argument) {
   //loop the game
   function updateGame() {
     swipedetect();
-  	if (++fps < 4) {
+  	if (++fps < 10) {
   		return;
   	}
   	fps = 0;
