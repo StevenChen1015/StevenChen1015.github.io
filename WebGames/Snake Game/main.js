@@ -9,8 +9,9 @@ function Dot() {
 function resize(){
   var canvas = document.getElementById('canvas');
   var menu = document.getElementById('main');
-  canvas.width = Math.floor(Math.trunc(window.innerWidth)/10)*10;
-  canvas.height = Math.round(Math.trunc(window.innerHeight)/100)*100 - 150;
+  // canvas.width = Math.floor(Math.trunc(window.innerWidth)/10)*10;
+  canvas.width = Math.round(window.innerWidth / 100) * 100;
+  canvas.height = Math.round(Math.trunc(window.innerHeight - 200)/100)*100;
   menu.style.top = canvas.height / 2 - 150 + "px";
   menu.style.width = window.innerWidth * 0.5 + "px";
   GRID_X = Math.ceil(canvas.width) / Math.ceil(GRID);
@@ -43,7 +44,7 @@ document.getElementById('start').addEventListener('click', function (argument) {
   //loop the game
   function updateGame() {
     swipedetect();
-  	if (++fps < 5) {
+  	if (++fps < 4) {
   		return;
   	}
   	fps = 0;
@@ -86,6 +87,8 @@ document.getElementById('start').addEventListener('click', function (argument) {
   			snake.maxLength++;
   			dot.x = getRandom(0, GRID_X) * GRID;
   	        dot.y = getRandom(0, GRID_Y) * GRID;
+            console.log("x" + dot.x + " y" + dot.y);
+
   	        score++;
   	        document.getElementById("score").innerHTML = score;
   		}

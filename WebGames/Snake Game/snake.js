@@ -1,5 +1,5 @@
 var GRID = 16;
-var INIT_LENGTH = 5;
+var INIT_LENGTH = 7;
 var SNAKE_X = 64;
 var SNAKE_Y = 64;
 var GRID_X, GRID_Y;
