@@ -32,7 +32,6 @@ document.getElementById('main').style.display = "block";
 document.getElementById('start').addEventListener('click', function (argument) {
     displayMenu();
     main();
-
 })
   function main() {
     startGame();
