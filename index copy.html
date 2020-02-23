@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mystyle.css">
   </head>
   <body>
 	<div id="colorlib-page">
@@ -45,7 +44,7 @@
 			</nav>
 		</aside> <!-- END COLORLIB-ASIDE -->
 		<div id="colorlib-main">
-			<div class="intro hero-wrap js-fullheight" style="background-image: url(images/bg_1.jpg);" data-stellar-background-ratio="0.5">
+			<div class="hero-wrap js-fullheight" style="background-image: url(images/bg_1.jpg);" data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
 				<div class="js-fullheight d-flex justify-content-center align-items-center">
 					<div class="col-md-8 text text-center">
@@ -71,25 +70,77 @@
             <h2 class="my-4">Skills</h2>
           </div>
         </div>
-          <ul id="skills" style="float: left; width: 40%;">
-            <li class="html">HTML & CSS</li>
-            <span id="skill_container"></span>
-            <li class="cpp">C++</li>
-            <li class="php">PHP & SQL</li>
-            <li class="git">Git</li>
-          </ul>
-          <ul id="skills" style="float: right; width: 40%;">
-            
-            <li class="java">JAVA</li>
-            <li class="js">JavaScript</li>
-            <li class="laravel">Laravel</li>
-            <li class="linux">Linux</li> 
-          </ul>
+    		<div class="row">
+    			<div class="col-md-4">
+    				<div class="blog-entry ftco-animate">
+						<div href="#" class="img img-2" style="background-image: url(images/java.png);"></div>
+						<div class="text text-2 pt-2 mt-3">
+							<span class="category mb-3 d-block">Java</span>
+            			</div>
+					</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="blog-entry ftco-animate">
+						<div href="#" class="img img-2" style="background-image: url(images/c++.png);"></div>
+						<div class="text text-2 pt-2 mt-3">
+							<span class="category mb-3 d-block">C++</span>
+	            		</div>
+					</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="blog-entry ftco-animate">
+						<div href="#" class="img img-2" style="background-image: url(images/html_css.jpg);"></div>
+						<div class="text text-2 pt-2 mt-3">
+							<span class="category mb-3 d-block">Html & Css</span>
+	            		</div>
+					</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="blog-entry ftco-animate">
+						<div href="#" class="img img-2" style="background-image: url(images/js.png);"></div>
+						<div class="text text-2 pt-2 mt-3">
+							<span class="category mb-3 d-block">JavaScript</span>
+	            		</div>
+					</div>
+    			</div>
+          <div class="col-md-4">
+    				<div class="blog-entry ftco-animate">
+						<div href="#" class="img img-2" style="background-image: url(images/Laravel.png);"></div>
+						<div class="text text-2 pt-2 mt-3">
+							<span class="category mb-3 d-block">Laravel</span>
+	            		</div>
+					</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="blog-entry ftco-animate">
+						<div href="#" class="img img-2" style="background-image: url(images/php_mysql.png);"></div>
+						<div class="text text-2 pt-2 mt-3">
+							<span class="category mb-3 d-block">PHP and SQL</span>
+	            		</div>
+					</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="blog-entry ftco-animate">
+						<div href="#" class="img img-2" style="background-image: url(images/linux.png);"></div>
+						<div class="text text-2 pt-2 mt-3">
+							<span class="category mb-3 d-block">Linux</span>
+	            		</div>
+					</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="blog-entry ftco-animate">
+						<div href="#" class="img img-2" style="background-image: url(images/git.png);"></div>
+						<div class="text text-2 pt-2 mt-3">
+							<span class="category mb-3 d-block">Git</span>
+	            		</div>
+					</div>
+    			</div>
+    		</div>
     	</div>
     </section>
 		</div><!-- END COLORLIB-MAIN -->
 	</div><!-- END COLORLIB-PAGE -->
-<footer style="margin-bottom: 100px;"> </footer>
+
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
@@ -114,32 +165,6 @@ $(".btn-custom").click(function() {
      	scrollTop: $(".ftco-section").offset().top
      }, 1000);
  });
-    function isScrolledIntoView(elem) {
-
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height();
-    
-        var elemTop = $(elem).offset().top;
-        console.log(elemTop);
-        var elemBottom = elemTop + $(elem).height();
-
-        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-    }
-
-    $(window).scroll(function(){
-
-        if (isScrolledIntoView('#skill_container') === true) {
-            $('#skills .html').addClass('five');
-            $('#skills .js, .java, .cpp,  .php').addClass('four');
-            $('#skills .git, .laravel, .linux').addClass('three');
-        }
-        if (isScrolledIntoView('.intro ') === true) {
-          $('#skills .html').removeClass('five');
-            $('#skills .js, .java, .cpp, .php').removeClass('four');
-            $('#skills .git, .laravel, .linux').removeClass('three');
-        }
-
-    });
   </script>
 
   </body>
